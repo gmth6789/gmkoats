@@ -3,7 +3,7 @@ import koaBody from 'koa-body';
 import koaViews from 'koa-views';
 import koaStatic from 'koa-static';
 import koaLogger from 'koa-logger';
-import router from './router';
+import router from './route';
 import path from 'path';
 
 const app = new Koa();
