@@ -3,7 +3,7 @@ import koaBody from 'koa-body';
 import koaViews from 'koa-views';
 import koaStatic from 'koa-static';
 import koaLogger from 'koa-logger';
-import router from './route';
+import router from './router';
 import path from 'path';
 
 const app = new Koa();
@@ -21,7 +21,7 @@ app.use(koaLogger())
 
 
 app.use(koaStatic(path.join(__dirname, './public'), {
-  maxAge: 30 * 24 * 60 * 60 * 1000, // 一个月
+  maxAge: 30 * 24 * 60 * 60 * 1000,
 }));
 
 
